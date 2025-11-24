@@ -1,0 +1,35 @@
+<div class="container">
+  <h1>Grid Image Merger</h1>
+  <p>Select an image for each specific quadrant. The final image will be a 2048x2048 PNG.</p>
+
+  <div class="inputs-container">
+
+    <div class="input-group">
+      <label for="input-tl">1. Top-Left Image ↖️</label>
+      <input type="file" id="input-tl" accept="image/png, image/jpeg">
+    </div>
+
+    <div class="input-group">
+      <label for="input-tr">2. Top-Right Image ↗️</label>
+      <input type="file" id="input-tr" accept="image/png, image/jpeg">
+    </div>
+
+    <div class="input-group">
+      <label for="input-bl">3. Bottom-Left Image ↙️</label>
+      <input type="file" id="input-bl" accept="image/png, image/jpeg">
+    </div>
+
+    <div class="input-group empty-slot">
+      <label>4. Bottom-Right (Empty)</label>
+      <div class="placeholder">Transparent</div>
+    </div>
+
+  </div>
+
+  <button id="process-btn" disabled>Merge & Download</button>
+
+  <div class="preview-container">
+    <h3>Preview:</h3>
+    <canvas id="canvas" width="2048" height="2048"></canvas>
+  </div>
+</div>
